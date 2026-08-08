@@ -3,10 +3,10 @@ export const seccion = (id, clase, text) => {
     element.id = id
     element.classList.add(clase)
     element.textContent = text
-    element.addEventListener('click', mensaje(id))
+    element.addEventListener('click', mensaje)
     return element
 }
 
-const mensaje = (idSeccion) => {
+const mensaje = () => {
     alert(`klk con klk ${idSeccion}`)
 }
